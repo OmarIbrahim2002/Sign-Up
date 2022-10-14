@@ -1,0 +1,121 @@
+/* Start Components */
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(103deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+:root{
+    --main-transition: 0.3s;
+}
+p,i{
+    color: #777;
+}
+a{
+    text-decoration: none;
+}
+/* End Components */
+form{
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 9px 9px 6px #0000004f;
+    caret-color: #0095ff;
+    color: rgba(9, 9, 121, 1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+form h1{
+    margin-bottom: 30px;
+}
+form .box{
+    display: flex;
+    margin-bottom: 30px;
+    text-align: left;
+}
+form .box i{
+    padding-right: 20px;
+} 
+form .box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #77777738;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+form .box input::placeholder{
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+form .box input:focus::placeholder{
+    opacity: 0;
+}
+form button{
+    width: 100%;
+    background: #0095ff;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+form button:hover{
+    background: #078eed;
+}
+form .login{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #77777738;
+}
+form .login a{
+    color: #0095ff;
+}
+form .register{
+    margin: 20px 0;
+}
+form .icons a i{
+    padding-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+form .icons a:nth-child(1) i{
+    color: #4267B2;
+}
+form .icons a:nth-child(1) i:hover {
+    color: #5686e7;
+}
+form .icons a:nth-child(2) i{
+    color: #1DA1F2;
+}
+form .icons a:nth-child(2) i:hover {
+    color: #66c5ff;
+}
+form .icons a:nth-child(3) i{
+    color: #DB4437;
+}
+form .icons a:nth-child(3) i:hover {
+    color: #ff5142;
+}
